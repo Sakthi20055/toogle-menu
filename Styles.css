@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pricing-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--price-color);
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+/* Light and Dark mode variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f9f9f9;
+    --price-color: blue;
+    --button-bg: rgb(255, 64, 0);
+    --button-text: #ffffff;
+    --button-bg-hover: blue;
+}
+
+.dark-mode {
+    --bg-color: #333333;
+    --text-color: #f9f9f9;
+    --card-bg: #444444;
+    --price-color: #76a9ff;
+    --button-bg: #76a9ff;
+    --button-text: #333333;
+    --button-bg-hover: #517fcc;
+}
